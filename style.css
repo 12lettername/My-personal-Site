@@ -55,7 +55,11 @@ ul {
           flex-direction: row;
       }
   }
-  
+  @media screen and (max-width: 600px) {
+    .name{
+        font-size: 100px;
+    }
+  }
  .header li {
     position: relative;
     padding: 30px;
