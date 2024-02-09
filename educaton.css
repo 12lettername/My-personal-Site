@@ -1,18 +1,19 @@
 body{
-  background-color: black;
+    background-color: black;
 }
+
 .header .nav-link{
     font-family: 'Roboto Condensed', sans-serif;
     color: white!important;
 }
-.contact h1{
-            
-background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
-background-position: 0 100%;
-background-size: 100% 2px;
-background-repeat: repeat-x;
-width: fit-content;
+.home{
+    margin-top: 150px;
+    color: white;
 }
+.home h1{
+    color: white!important;
+}
+
 ul {
     
     list-style: none;
@@ -23,15 +24,18 @@ ul {
     padding: 0;     
     max-width: 600px;
   }
-
   
   @media screen and (min-width: 600px) {
       ul {
           flex-direction: row;
       }
   }
-  
-  .header li {
+  @media screen and (max-width: 600px) {
+    .name{
+        font-size: 100px;
+    }
+  }
+ .header li {
     position: relative;
     padding: 30px;
     white-space: nowrap;
@@ -48,12 +52,12 @@ ul {
     position: relative;
   }
   
-  .header a:hover::after {
+ .header a:hover::after {
     width: 100%;
     right: 0;
   }
   
-  .header a::after {
+ .header a::after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -64,14 +68,4 @@ ul {
     background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
     transition: width .5s ease 0s, right .5s ease 0s;
     width: 0;
-  }
-  .info{
-    width: 35%;
-    
-    margin-left: 32%;    
-  }
-  .Information{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 8fr; 
   }
