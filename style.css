@@ -73,3 +73,23 @@ ul {
     transition: width .5s ease 0s, right .5s ease 0s;
     width: 0;
   }
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid purple;
+    border-radius: 58%;
+    font-size: 20px;
+    color: purple;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+}
+.social-media a:hover{
+    background: purple;
+    color: black;
+    box-shadow: 0 0 20px purple;
+}
