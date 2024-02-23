@@ -17,10 +17,10 @@
       <div class="container" style="margin: 0px!important;">
         <header class="d-flex justify-content-center py-3">
           <ul>
-            <li ><a href="./index.html" class="nav-link" aria-current="page">HOME</a></li>
-            <li ><a href="./about.html" class="nav-link">ABOUT</a></li>
-            <li ><a href="./education.html" class="nav-link">EDUCATION</a></li>
-            <li ><a href="./contactMe.html" class="nav-link">CONTACT ME</a></li>
+            <li ><a href="./index.html" style="--i:1;" class="nav-link" aria-current="page">HOME</a></li>
+            <li ><a href="./about.html" style="--i:2;" class="nav-link">ABOUT</a></li>
+            <li ><a href="./education.html" style="--i:3;" class="nav-link">EDUCATION</a></li>
+            <li ><a href="./contactMe.html" style="--i:4;" class="nav-link">CONTACT ME</a></li>
           </ul>
         </header>
       </div>
@@ -29,16 +29,19 @@
       <div class="px-4 py-5 mt-5 text-center">
         <h1 class="display-5 fw-bold text-body-emphasis">MY NAME IS <span class="name">ARYAN NEOGI</span></h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">A web developer specialising in HTML, CSS and JavaScript.</p>
+          <p class="lead mb-4">A web developer specialising in <span class="multiple-text"></span></p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <button type="button" class="btn btn-outline-light btn-lg px-4 gap-3 fw-bold rounded-pill"><a href="./about.html" class="nav-link">ABOUT ME</a></button>
           </div>
-          <div class="social-media">
-            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-          </div>
+          <di2 class="social-media">
+            <a href="#" style="--i:1;"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="#" style="--i:2;"><i class='bx bxl-linkedin'></i></a>
+          </di2>
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./home.js"></script>
+    
 </body>
 </html>
