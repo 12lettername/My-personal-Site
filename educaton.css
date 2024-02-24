@@ -81,6 +81,10 @@ ul {
   .education .heading {
     text-align: center;
     font-size: 50px;
+    font-weight: bolder;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
   }
   .education .heading span {
     color: purple;
@@ -169,6 +173,17 @@ ul {
 
     100%{
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
         opacity: 1;
     }
 }
