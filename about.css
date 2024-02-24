@@ -37,7 +37,8 @@ ul {
     width: fit-content;
   }
   
- .header a {
+  .header a {
+    display: inline-block;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -45,6 +46,9 @@ ul {
     display: inline-block;
     padding: 15px;
     position: relative;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
   }
   
   .header a:hover::after {
@@ -64,3 +68,16 @@ ul {
     transition: width .5s ease 0s, right .5s ease 0s;
     width: 0;
   }
+
+
+  @keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -42,7 +42,8 @@ ul {
     width: fit-content;
   }
   
- .header a {
+  .header a {
+    display: inline-block;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -50,6 +51,9 @@ ul {
     display: inline-block;
     padding: 15px;
     position: relative;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
   }
   
  .header a:hover::after {
@@ -69,3 +73,91 @@ ul {
     transition: width .5s ease 0s, right .5s ease 0s;
     width: 0;
   }
+  .education {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding: 5rem;
+  }
+  .education .heading {
+    text-align: center;
+    font-size: 50px;
+  }
+  .education .heading span {
+    color: purple;
+  }
+  .education .education-column {
+    flex: 1 1 40rem;
+  }
+  .education-column .education-box {
+    border-left: .2rem solid purple;
+  }
+  .education-box .education-content {
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .education-box .education-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: purple;
+    border-radius: 58%;
+  }
+  .education-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid purple;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  .education-content .content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(196, 1, 196);
+    z-index: -1;
+    transition: .5s;
+    opacity: .2;
+}
+.education-content .content:hover::before {
+    width: 100%;
+}
+  .education-content .content .year {
+    font-size: 1.5rem;
+    color:  purple;
+    padding-bottom: .5rem;
+  }
+  .education-content .content .year i{
+    padding-right: .5rem;
+  }
+  .education-content .content h3 {
+    font-size: 2rem;
+  }
+  .education-content .content p {
+    font-size: 1.6rem;
+    padding-top: .5rem;
+  }
+
+
+  @keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
