@@ -78,7 +78,6 @@ ul {
     position: relative;
     width: 25rem;
     height: 20rem;
-    border-radius: 58%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,6 +94,15 @@ ul {
     border-image-outset: 100%;
     animation: floatImage 4s ease-in-out infinite;
     animation-delay: 2s,3s;
+  }
+  @media (max-width: 556px){
+    .about-img{
+      width: fit-content;
+    }
+    .about-img img {
+      width: 70%;
+      left: 0%;
+    }
   }
   h3{
     font-size: 20px;
