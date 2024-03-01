@@ -1,5 +1,6 @@
 body{
   background-color: black;
+  list-style: none;
 }
 .header .nav-link{
     font-family: 'Roboto Condensed', sans-serif;
@@ -81,19 +82,130 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
+
   .about-img img {
     position: relative;
-    left: 25%;
     width: 90%;
-    border-radius: 58%;
-    border: .2rem solid purple;
-    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    left: 25%;
+    border: 10px solid;
+    padding: 10px;
+    border-image-source: linear-gradient(316deg, #3e187a 0%,purple 74%);
+    border-image-slice: 1;
+    border-image-outset: 100%;
+    animation: floatImage 4s ease-in-out infinite;
     animation-delay: 2s,3s;
   }
-  .photo{
-    
+  h3{
+    font-size: 20px;
+    margin: 5px;
+    color: white;
+    padding: 10px;
+  }
+
+  .bar{
+    background: #353b48;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0,3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 2px rgba(0, 0, 0, 0.24);
+    transform: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  .bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+
+  }
+  .bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg,#3e187a 0%, purple 100%);
+  }
+  .html{
+    width: 95%;
+    animation: html 3s;
+  }
+  .css{
+    width: 90%;
+    animation: css 3s;
+  }
+  .js{
+    width: 60%;
+    animation: js 3s;
+  }
+  .bs{
+    width: 75%;
+    animation: bs 3s;
+  }
+  .git{
+    width: 80%;
+    animation: git 3s;
+  }
+  .Python{
+    width: 70%;
+    animation: Python 3s;
+  }
+  .php{
+    width: 20%;
+    animation: php 3s;
+  }
+  
+  @keyframes html {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 95%;
+    }
+  }
+  @keyframes css {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 90%;
+    }
+  }
+  @keyframes js {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 60%;
+    }
+  }
+  @keyframes bs {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 75%;
+    }
+  }
+  @keyframes git {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 80%;
+    }
+  }
+  @keyframes Python {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 70%;
+    }
+  }
+  @keyframes php {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 20%;
+    }
   }
 
   @keyframes slideTop {
@@ -118,17 +230,6 @@ ul {
       opacity: 1;
   }
 }
-@keyframes zoomIn {
-  0% {
-    transform:  scale(0);
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 
 @keyframes floatImage {
   0% {
@@ -141,3 +242,4 @@ ul {
     transform: translateY(0);
   }
 }
+
