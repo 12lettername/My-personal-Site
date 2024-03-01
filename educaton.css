@@ -144,6 +144,8 @@ ul {
   .education-content .content h3 {
     font-size: 2rem;
   }
+  
+  /* making the page responsive */
   @media (max-width: 425px) {
     .education-content .content h3 {
          font-size: 25px;

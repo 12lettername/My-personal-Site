@@ -5,14 +5,8 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
     color: white!important;
 }
-.aboutme h1{
-            
-background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
-background-position: 0 100%;
-background-size: 100% 2px;
-background-repeat: repeat-x;
-width: fit-content;
-}
+
+
 ul {
     
     list-style: none;
@@ -68,7 +62,39 @@ ul {
     transition: width .5s ease 0s, right .5s ease 0s;
     width: 0;
   }
-
+  .aboutme .heading{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
+  }
+  .aboutme .heading span{
+    color: purple;
+  }
+  .about-img {
+    position: relative;
+    width: 25rem;
+    height: 20rem;
+    border-radius: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .about-img img {
+    position: relative;
+    left: 25%;
+    width: 90%;
+    border-radius: 58%;
+    border: .2rem solid purple;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s,3s;
+  }
+  .photo{
+    
+  }
 
   @keyframes slideTop {
     0%{
@@ -80,4 +106,38 @@ ul {
         transform: translateY(0);
         opacity: 1;
     }
+}
+@keyframes slideRight {
+  0%{
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform:  scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
