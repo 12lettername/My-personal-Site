@@ -5,13 +5,21 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
     color: white!important;
 }
+.contact span{
+  color: purple;
+}
 .contact h1{
-            
-background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
-background-position: 0 100%;
-background-size: 100% 2px;
-background-repeat: repeat-x;
-width: fit-content;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
+    transition: font-size 0.3s ease-in-out;
+}
+.contact h1:hover{
+  font-size: 80px;
+  
 }
 ul {
     
@@ -75,9 +83,14 @@ ul {
     margin-left: 32%;    
   }
   .Information{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 8fr; 
+    display: flex;
+    flex-direction: column;
+  }
+  .address,.phone,.email,.web{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    gap: 10px;
   }
 
   @keyframes slideTop {
@@ -90,4 +103,14 @@ ul {
         transform: translateY(0);
         opacity: 1;
     }
+}@keyframes slideRight {
+  0%{
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
 }
