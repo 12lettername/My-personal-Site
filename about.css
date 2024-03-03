@@ -70,11 +70,9 @@ ul {
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: .7s;
-    transition: font-size 0.3s ease-in-out;
+    
   }
-  .aboutme .heading:hover{
-    font-size: 80px;
-  }
+  
   .aboutme .heading span{
     color: purple;
   }
