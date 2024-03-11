@@ -79,16 +79,93 @@ ul {
     
     margin-left: 32%;    
   }
-  .Information{
-    display: flex;
-    flex-direction: column;
-  }
+  
   .address,.phone,.email,.web{
     display: flex;
     flex-direction: row;
     margin: 5px;
     gap: 10px;
+    width: fit-content!important;
   }
+   @media (max-width:1014px) {
+    .address h3{
+      font-size: 15px!important;
+    }
+    .address p{
+      font-size: 10px!important;
+    }
+    .phone h3{
+      font-size: 15px!important;
+    }
+    .phone p{
+      font-size: 10px!important;
+    }
+    .email h3{
+      font-size: 15px!important;
+    }
+    .email p{
+      font-size: 10px!important;
+    }
+    .web h3{
+      font-size: 15px!important;
+    }
+    .web p{
+      font-size: 10px!important;
+    }
+  }
+  @media (max-width:720px) {
+    .address h3{
+      font-size: 10px!important;
+    }
+    .address p{
+      font-size: 5px!important;
+    }
+    .phone h3{
+      font-size: 10px!important;
+    }
+    .phone p{
+      font-size: 5px!important;
+    }
+    .email h3{
+      font-size: 10px!important;
+    }
+    .email p{
+      font-size: 5px!important;
+    }
+    .web h3{
+      font-size: 10px!important;
+    }
+    .web p{
+      font-size: 5px!important;
+    }
+  }
+  @media (max-width:520px) {
+    .address h3{
+      font-size: 5px!important;
+    }
+    .address p{
+      font-size: 5px!important;
+    }
+    .phone h3{
+      font-size: 5px!important;
+    }
+    .phone p{
+      font-size: 5px!important;
+    }
+    .email h3{
+      font-size: 5px!important;
+    }
+    .email p{
+      font-size: 5px!important;
+    }
+    .web h3{
+      font-size: 5px!important;
+    }
+    .web p{
+      font-size: 5px!important;
+    }
+  } 
+  
 
   @keyframes slideTop {
     0%{
